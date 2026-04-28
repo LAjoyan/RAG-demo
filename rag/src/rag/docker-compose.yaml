@@ -1,0 +1,6 @@
+services:
+  backend:
+    container_name: backend
+    build:
+      context: contextPath
+      dockerfile: dockerfiles/backend.dockerfile
