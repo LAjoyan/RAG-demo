@@ -2,5 +2,10 @@ services:
   backend:
     container_name: backend
     build:
-      context: contextPath
+      context: .
       dockerfile: dockerfiles/backend.dockerfile
+    env_file:
+     - .env
+    image: backend:v1
+    ports:
+     - "8000:8000"
