@@ -2,7 +2,7 @@ FROM python:3.13-slim
 
 WORKDIR /app/rag
 
-COPY backend backend /app/rag
+COPY backend backend
 COPY knowledge_base knowledge_base
 
 ENV PYTHONPATH=/app
